@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
 
 	def index
 		
+		@articles = Article.all
 	end
 
 
@@ -19,7 +20,6 @@ class ArticlesController < ApplicationController
 	end
 
 	def create
-
 		# create a new article with the attributes entered by the user
 		@article = Article.new(article_params)
 
