@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Article.create(title: 'Livreur', text: 'Bon Livreur dans le coin')
+Article.create(title: 'AfriMarket', text: 'Magasin de produits exotique avec service de livraison a domicile')

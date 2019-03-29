@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
 
+	# CRUD = Create, Read, Update, Delete
+	
 	def index
-		
 		@articles = Article.all
 	end
 
@@ -12,7 +13,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def new
-		
+		@article = Article.new
 	end
 
 	def edit
@@ -24,10 +25,12 @@ class ArticlesController < ApplicationController
 		@article = Article.new(article_params)
 
 		# save the model in the DB
-		@article.save 
-
-		# redirect the user to the show action
-		redirect_to @article
+		if @article.save 
+			# redirect the user to the show action
+			redirect_to @article
+		else
+			render 'new'
+		end
 	end
 
 	def update

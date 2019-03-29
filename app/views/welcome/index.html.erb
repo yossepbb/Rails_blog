@@ -1,2 +1,6 @@
-<h1>Welcome#index</h1>
-<p>Hello New blog</p>
+<h1>Hello New blog</h1>
+<!-- if you want to link to an action in the same controller you don't need to specify the :controller option, as rails will use the current controller by default -->
+
+
+<p><%= link_to 'My blog', controller: 'articles' %></p><br>
+
