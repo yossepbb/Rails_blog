@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+	http_basic_authenticate_with name: "yossep", password: "Africa",
+	except: [:index, :show]
 	# CRUD = Create, Read, Update, Delete
 	
 	# Listing de tous les articles
