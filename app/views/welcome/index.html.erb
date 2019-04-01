@@ -1,6 +1,37 @@
-<h1>Hello New blog</h1>
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>EXOTIC SHOP</title>
+  </head>
+
+  <body>
+
+    <div class="navbar-minimal">
+      <img src="logo2.png">
+    </div>
+
+    <div class="banner">
+      <div class="banner-content">
+        <h1>ExoticShop</h1>
+        <p>Votre solution pour faire vos courses depuis chez vous et gagner en temps.</p>
+        <%= link_to 'My blog', controller: 'articles' %>
+      </div>
+    </div>
+
+      <div class="container-description">
+        <p>
+          Imagines toi, un samedi matin tu as un envie de cuisiner d'un bon plat. Tu ouvres ton refrigerateur et il est vide. 
+          Le magasin le plus proche est à 5 kilomètres de chez toi. En plus tu n'as plus d'essence, pas de titre de transport pour t'y rendre.
+          Alors que faire ? C'est simple nous avons la solution. ExoticShop te permet de faire tes courses depuis chez toi et te faire livrer en 30 minutes maximum. 
+        </p> 
+      </div>
+
+  </body>
+</html>
+
 <!-- if you want to link to an action in the same controller you don't need to specify the :controller option, as rails will use the current controller by default -->
 
-
-<p><%= link_to 'My blog', controller: 'articles' %></p><br>
 
